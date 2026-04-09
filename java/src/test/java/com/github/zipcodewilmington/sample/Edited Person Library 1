@@ -1,215 +1,14 @@
+package com.zipcodewilmington.centrallibrary;
 
+public class Person {}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-package com.github.zipcodewilmington.sample;
-
-public class Person {
-}
-
-
-public class Address[]
+public class Address {
     //Instance vairables
     private String street;
     private String city;
     private String state;
     private String zipCode;
-
+    
     //Defalut Setting
 public Address() {
     this.street = "";
@@ -227,21 +26,21 @@ public Address() {
     }
 
     //Getter
-    public String getStreet() {
+    public String gitStreet() {
         return street;
     }
-    public String getCity() {
+    public String gitCity() {
         return city;
     }
-    public String getState() {
+    public String gitState() {
         return state;
     }
-    public String getZipcode() {
+    public String gitZipcode() {
         return zipCode;
     }
     //Override for cleaner view
-    public String toString() {
-        return street + ", " + city + ", " + state + " " + zipCode;
+    public String AddressString() {
+        return street + ", " + city + ", " + state + ", " + zipCode;
     }
 } 
 
