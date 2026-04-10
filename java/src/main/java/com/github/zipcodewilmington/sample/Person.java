@@ -1,247 +1,49 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 package com.github.zipcodewilmington.sample;
 
-public class Person {
-}
+public class Person implements PersonInterface {
 
+    private String firstName;
+    private String lastName;
+    private Integer age;
 
-public class Address[]
-    //Instance vairables
-    private String street;
-    private String city;
-    private String state;
-    private String zipCode;
-
-    //Defalut Setting
-public Address() {
-    this.street = "";
-    this.city = "";
-    this.state = "";
-    this.zipCode = "";
+    public Person() {
+        this.firstName = "";
+        this.lastName = "";
+        this.age = 0;
     }
 
-    //Parameterized Constructor
-    public Address(String street, String city, String state, String zipCode) {
-        this.street = street;
-        this.city = city;
-        this.state = state;
-        this.zipCode = zipCode;
+    @Override
+    public String getFirstName() {
+        return firstName;
     }
 
-    //Getter
-    public String getStreet() {
-        return street;
+    @Override
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
-    public String getCity() {
-        return city;
+
+    @Override
+    public String getLastName() {
+        return lastName;
     }
-    public String getState() {
-        return state;
+
+    @Override
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
-    public String getZipcode() {
-        return zipCode;
+
+    @Override
+    public Integer getAge() {
+        return age;
     }
-    //Override for cleaner view
+
+    @Override
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    @Override
     public String toString() {
-        return street + ", " + city + ", " + state + " " + zipCode;
+        return firstName + " " + lastName + ", age " + age;
     }
-} 
-
+}
